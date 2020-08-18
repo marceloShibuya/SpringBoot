@@ -156,3 +156,101 @@ java.lang.NullPointerException
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:539)
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:265)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-08-17 12:27:41.886
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:41.532
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:41.533
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5807b2bd[org.springframework.tooling.boot.ls:1.20.0.202007271426(id=996)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:41.536
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:41.571
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.017
+!MESSAGE Boot LS startup time from start to initialized: 3471ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.186
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rZpmplKmisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.190
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.192
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.196
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.200
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.202
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.203
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.204
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rZpmplKm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.216
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.223
+!MESSAGE buffering callback sts4.classpath.rZpmplKm EpicTask false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.224
+!MESSAGE executing callback sts4.classpath.rZpmplKm 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:28:45.266
+!MESSAGE executing callback sts4.classpath.rZpmplKm SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2020-08-17 12:29:24.084
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-17 12:29:24.084
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46273c1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23c55d52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:29:39.496
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rZpmplKm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:29:39.497
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.rZpmplKm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:29:39.498
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-17 12:29:39.499
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rZpmplKm => OK
+
+!ENTRY org.eclipse.ui.ide 4 4 2020-08-17 12:30:25.980
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2020-08-17 12:30:25.981
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-08-17 12:30:25.981
+!MESSAGE The project description file (.project) for 'EpicTask' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-17 12:30:26.461
+!MESSAGE The workspace will exit with unsaved changes in this session.
