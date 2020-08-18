@@ -5,21 +5,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<h1>Novo Usuário</h1>
-
-<form action="/user" method="POST">
+<form action="/user" method="post">
 	<div>
-		<label for="name">Nome completo: </label>
-		<input id="name"  name="name" value="Marcelo Shibuya">
+		<label for="nome">Nome completo</label>
+		<input id="nome" name="nome" value="Marcelo Shibuya" />
 	</div>
 	<div>
-		<label for="email">Email: </label>
-		<input id="email"  name="email" value="marcelo@marcelo.com.br">
+		<label for="email">Email</label>
+		<input id="email" name="email" value="marcelo@marcelo.com.br"/>
 	</div>
 	<div>
-		<label for="pass">Senha: </label>
-		<input id="pass"  name="pass" type="password" value="12345">
+		<label for="pass">Senha</label>
+		<input id="pass" name="pass" type="password" value="12345"/>
 	</div>
 	<a href="/user">Cancelar</a>
 	<button>Salvar</button>

@@ -14,12 +14,12 @@ public class UserController {
 	@Autowired
 	private UserRepository repository;
 
-	@RequestMapping(value="/user", method= RequestMethod.GET)
+	@RequestMapping(value= "/user",method = RequestMethod.GET)
 	public String users() {
 		return "users";
 	}
 	
-	@RequestMapping(value="/user", method=RequestMethod.POST)
+	@RequestMapping(value= "/user", method = RequestMethod.POST)
 	public String save(User user) {
 		System.out.println(user);
 		repository.save(user);
@@ -30,7 +30,5 @@ public class UserController {
 	public String formUser() {
 		return "user_new";
 	}
-	
-	
 
 }

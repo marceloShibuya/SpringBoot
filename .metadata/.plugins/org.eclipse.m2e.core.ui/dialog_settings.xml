@@ -3,6 +3,7 @@
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="C:\Users\55119\Desktop\FIAP_2Ano\DIGITAL BUSINESS ENABLEMENT\EpicTask"/>
+			<item value="C:\Users\55119\Documents\GitHub\SpringBoot\EpicTask"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -254,3 +254,700 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.core.resources 2 10035 2020-08-17 12:30:26.461
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2020-08-18 12:05:37.128 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-08-18 12:05:45.898
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2020-08-18 12:05:47.121
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-08-18 12:05:47.121
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.jface 2 0 2020-08-18 12:05:49.501
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-18 12:05:49.501
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ee7a538,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c045627,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-18 12:05:56.504
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\55119'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2020-08-18 12:06:04.369
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:572)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:539)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:265)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-08-18 12:07:17.396
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2020-08-18 12:09:54.412 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-08-18 12:10:01.445
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-08-18 12:10:01.445
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.jface 2 0 2020-08-18 12:10:03.469
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-18 12:10:03.469
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58ca1cad,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ae6119b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-18 12:10:09.346
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\55119'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2020-08-18 12:10:17.624
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:572)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:539)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:265)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-08-18 12:10:18.225
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2020-08-18 13:12:56.032 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-08-18 13:13:14.360
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-08-18 13:13:14.360
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.jface 2 0 2020-08-18 13:13:15.828
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-18 13:13:15.828
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e781b4f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b89debc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-18 13:13:19.740
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\55119'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2020-08-18 13:13:27.113
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:572)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:539)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:265)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-08-18 13:13:47.034
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:16.701
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:16.702
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@349025f9[org.springframework.tooling.boot.ls:1.20.0.202007271426(id=996)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:16.707
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:16.749
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.350
+!MESSAGE Boot LS startup time from start to initialized: 2631ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.518
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tpCKqDvyisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.522
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.523
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.527
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.530
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.532
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.533
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.534
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tpCKqDvy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.545
+!MESSAGE classpath=71 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.550
+!MESSAGE buffering callback sts4.classpath.tpCKqDvy EpicTask false 71
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.552
+!MESSAGE executing callback sts4.classpath.tpCKqDvy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:14:19.604
+!MESSAGE executing callback sts4.classpath.tpCKqDvy SUCCESS [done]
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.329
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.329
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.330
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.330
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.334
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.334
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.335
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.335
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.336
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:53.338
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.030
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.031
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.032
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.033
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.034
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.035
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.036
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.037
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.038
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:17:54.039
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.329
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.330
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.331
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.332
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.334
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.334
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.335
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.336
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.337
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:18:10.339
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.606
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.607
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.608
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.608
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.609
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.609
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.610
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.610
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.610
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:14.611
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.430
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.431
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.431
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.432
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.432
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.433
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.433
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.434
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.434
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:21:25.435
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.384
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.385
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.385
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.386
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.386
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.387
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.387
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.388
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.388
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:31.388
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.637
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.638
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.639
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.639
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.640
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.641
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.641
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.642
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.642
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:22:36.643
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.961
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.961
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.962
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.962
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.963
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.963
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.963
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.964
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.964
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:02.964
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.262
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.263
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.263
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.264
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.264
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.265
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.265
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.266
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.267
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 13:30:08.267
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.ui 4 4 2020-08-18 13:45:25.367
+!MESSAGE Conflicting handlers for org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler: {org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler} vs {org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.jdt.ui.CompilationUnitEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler,  for 'org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler',  in WorkbenchContext, active=true, sourcePriority=0, participating=true]} vs {[org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler,  for 'org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler',  in WorkbenchContext, active=true, sourcePriority=0, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.jdt.ui.CompilationUnitEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:75)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.ui.internal.quickaccess.providers.CommandProvider.retrieveCommand(CommandProvider.java:102)
+	at org.eclipse.ui.internal.quickaccess.providers.CommandProvider.getElements(CommandProvider.java:85)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessProvider.getElementsSorted(QuickAccessProvider.java:83)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$3.runInUIThread(QuickAccessContents.java:398)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4005)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-08-18 13:50:27.010
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:54:03.091
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:54:03.096
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:54:03.100
+!MESSAGE buffering callback sts4.classpath.tpCKqDvy EpicTask false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:54:03.101
+!MESSAGE executing callback sts4.classpath.tpCKqDvy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 13:54:03.108
+!MESSAGE executing callback sts4.classpath.tpCKqDvy SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2020-08-18 14:02:38.448
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-18 14:02:38.448
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48405785,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@668ea234,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2020-08-18 14:08:34.691
+!MESSAGE Conflicting handlers for org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler: {org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler} vs {org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.jdt.ui.CompilationUnitEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler,  for 'org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler',  in WorkbenchContext, active=true, sourcePriority=0, participating=true]} vs {[org.springframework.ide.eclipse.boot.wizard.starters.AddStartersSwitchHandler,  for 'org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler',  in WorkbenchContext, active=true, sourcePriority=0, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.jdt.ui.CompilationUnitEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:271)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:282)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:237)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:75)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.ui.internal.quickaccess.providers.CommandProvider.retrieveCommand(CommandProvider.java:102)
+	at org.eclipse.ui.internal.quickaccess.providers.CommandProvider.getElements(CommandProvider.java:85)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessProvider.getElementsSorted(QuickAccessProvider.java:83)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$3.runInUIThread(QuickAccessContents.java:398)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4005)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:09:54.501
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:09:54.506
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:09:54.512
+!MESSAGE buffering callback sts4.classpath.tpCKqDvy EpicTask false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:09:54.512
+!MESSAGE executing callback sts4.classpath.tpCKqDvy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:09:54.517
+!MESSAGE executing callback sts4.classpath.tpCKqDvy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:33.099
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:33.105
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:33.110
+!MESSAGE buffering callback sts4.classpath.tpCKqDvy EpicTask false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:33.111
+!MESSAGE executing callback sts4.classpath.tpCKqDvy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:33.124
+!MESSAGE executing callback sts4.classpath.tpCKqDvy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:44.928
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:44.935
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:44.941
+!MESSAGE buffering callback sts4.classpath.tpCKqDvy EpicTask false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:44.942
+!MESSAGE executing callback sts4.classpath.tpCKqDvy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-18 14:12:44.950
+!MESSAGE executing callback sts4.classpath.tpCKqDvy SUCCESS [done]
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.045
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.046
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.047
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.047
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.048
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.048
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.048
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.049
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.049
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-08-18 14:19:24.050
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
