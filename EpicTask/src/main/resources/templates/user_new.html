@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<head th:include="_template :: head"></head>
+
 <body>
-<form action="/user" method="post">
-	<div>
-		<label for="nome">Nome completo</label>
-		<input id="nome" name="nome" value="Marcelo Shibuya" />
+	<div class="content">
+		<h2>Novo Usuario</h2>
+		<form action="/user" method="post" th:object="${user}">
+			<input 
+				name="nome" 
+				type="text" 
+				placeholder="Nome completo" 
+				value="Marcelo Shibuya" 
+				th:classappend="${#fields.hasErrors('nome')} ? invalid"
+			/> 
+			<span th:errors="*{nome}"></span> <!-- Utilizado para validação de entrada do campo nome -->
+			
+			<input 
+				name="email" 
+				type="text" 
+				placeholder="E-mail" 
+				value="marcelo@marcelo.com.br" 
+				th:classappend="${#fields.hasErrors('email')} ? invalid"
+			/> 
+			<span th:errors="*{email}"></span>
+				
+			<input 
+				name="pass" 
+				type="password" 
+				placeholder="Senha" 
+				value="12345" 
+				th:classappend="${#fields.hasErrors('pass')} ? invalid"
+			/>
+			<span th:errors="*{pass}"></span>
+
+			<div class="actions">
+				<a href="/user">Cancelar</a>
+				<button class="btn blue">Salvar</button>
+			</div>
+		</form>
 	</div>
-	<div>
-		<label for="email">Email</label>
-		<input id="email" name="email" value="marcelo@marcelo.com.br"/>
-	</div>
-	<div>
-		<label for="pass">Senha</label>
-		<input id="pass" name="pass" type="password" value="12345"/>
-	</div>
-	<a href="/user">Cancelar</a>
-	<button>Salvar</button>
-</form>
 </body>
 </html>
