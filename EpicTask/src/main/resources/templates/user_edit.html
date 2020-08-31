@@ -3,17 +3,19 @@
 <head th:include="_template :: head"></head>
 
 <body>
-
 	<div class="content">
 	
-		<h2>Novo Usuario</h2>
+		<h2>Editar Usuario</h2>
 		
-		<form action="/user" method="post" th:object="${user}">
+		<form action="/user/update" method="post" th:object="${user}">
+			
+			<input type="hidden" th:field="*{id}" >
+			
 			<input 
 				name="nome" 
 				type="text" 
 				placeholder="Nome completo" 
-				value="Marcelo Shibuya" 
+				th:field="*{nome}"
 				th:classappend="${#fields.hasErrors('nome')} ? invalid"
 			/> 
 			<span th:errors="*{nome}"></span> <!-- Utilizado para validação de entrada do campo nome -->
@@ -22,19 +24,10 @@
 				name="email" 
 				type="text" 
 				placeholder="E-mail" 
-				value="marcelo@marcelo.com.br" 
+				th:field="*{email}"
 				th:classappend="${#fields.hasErrors('email')} ? invalid"
 			/> 
 			<span th:errors="*{email}"></span>
-				
-			<input 
-				name="pass" 
-				type="password" 
-				placeholder="Senha" 
-				value="12345" 
-				th:classappend="${#fields.hasErrors('pass')} ? invalid"
-			/>
-			<span th:errors="*{pass}"></span>
 
 			<div class="actions">
 				<a href="/user" class="btn">Cancelar</a>

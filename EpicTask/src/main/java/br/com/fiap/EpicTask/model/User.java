@@ -1,4 +1,4 @@
-package br.com.fiap.EpicTask.model;
+ package br.com.fiap.EpicTask.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,7 +16,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "O nome é obrigatório")
+	@NotBlank(message = "{user.name.empty}")
 	private String nome;
 	
 	@NotBlank(message = "O email é obrigatório")
