@@ -25,7 +25,7 @@ public class UserController {
 	@Autowired
 	private UserRepository repository;
 
-	@GetMapping()
+	@GetMapping()  
 	public ModelAndView users() {
 		List<User> users = repository.findAll();
 		ModelAndView modelAndView = new ModelAndView("users");
@@ -33,23 +33,23 @@ public class UserController {
 		return modelAndView;
 	}
 	
-	@PostMapping()
+	@PostMapping()  
 	public String save(@Valid User user, BindingResult result, RedirectAttributes attribute) {
-		if(result.hasErrors()) return "user_new";
+		if (result.hasErrors()) return "user_new";
 		repository.save(user);
-		attribute.addFlashAttribute("message", "Usuário cadastrado com sucesso");
+		attribute.addFlashAttribute("message", "usuário cadastrado com sucesso");
 		return "redirect:user";
 	}
 	
-	@RequestMapping("/new")
+	@RequestMapping("/new")  
 	public String formUser(User user) {
 		return "user_new";
 	}
 	
-	@RequestMapping("/delete/{id}")
-	public String deleteUser(@PathVariable("id") Long id,RedirectAttributes attribute) {
+	@RequestMapping("delete/{id}")
+	public String deleteUser(@PathVariable Long id, RedirectAttributes attributes) {
 		repository.deleteById(id);
-		attribute.addFlashAttribute("message", "Usuário removido com sucesso");
+		attributes.addFlashAttribute("message", "usuário apagado com sucesso");
 		return "redirect:/user";
 	}
 	
@@ -62,13 +62,12 @@ public class UserController {
 	}
 	
 	@PostMapping("update")
-	public String updateUser(@Valid User user, BindingResult result,RedirectAttributes attribute) {
-		if(result.hasErrors()) return "user_edit";
+	public String updateUser(@Valid User user, BindingResult result, RedirectAttributes attributes){
+		if (result.hasErrors()) return "user_edit";
 		repository.save(user);
-		attribute.addFlashAttribute("message", "Usuário atualizado com sucesso");
+		attributes.addFlashAttribute("message", "usuário atualizado!");
 		return "redirect:/user";
 	}
-	
 	
 
 }

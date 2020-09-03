@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:include="_template :: head"></head>
+
+<head th:include="_template :: head" ></head>
 
 <body>
+<div class="content">
 
-	<div class="content">
-	
-		<h2>Novo Usuario</h2>
+	<h2 th:text="#{new.user}"></h2>
+
+	<form action="/user" method="POST" th:object="${user}">
+		<input 
+			name="name" 
+			type="text" 
+			th:placeholder="#{placeholder.name}" 
+			value="Denise Hocsis" 
+			th:classappend="${#fields.hasErrors('name')} ? invalid" 
+		/>
+		<span th:errors="*{name}"></span>
 		
-		<form action="/user" method="post" th:object="${user}">
-			<input 
-				name="nome" 
-				type="text" 
-				placeholder="Nome completo" 
-				value="Marcelo Shibuya" 
-				th:classappend="${#fields.hasErrors('nome')} ? invalid"
-			/> 
-			<span th:errors="*{nome}"></span> <!-- Utilizado para validação de entrada do campo nome -->
-			
-			<input 
-				name="email" 
-				type="text" 
-				placeholder="E-mail" 
-				value="marcelo@marcelo.com.br" 
-				th:classappend="${#fields.hasErrors('email')} ? invalid"
-			/> 
-			<span th:errors="*{email}"></span>
-				
-			<input 
-				name="pass" 
-				type="password" 
-				placeholder="Senha" 
-				value="12345" 
-				th:classappend="${#fields.hasErrors('pass')} ? invalid"
-			/>
-			<span th:errors="*{pass}"></span>
+		<input 
+			name="gitName" 
+			type="text" 
+			th:placeholder="#{placeholder.gitName}" 
+			value="marceloShibuya" 
+			th:classappend="${#fields.hasErrors('gitName')} ? invalid" 
+		/>
+		<span th:errors="*{gitName}"></span>
+		
+		<input 
+			name="email" 
+			type="text" 
+			th:placeholder="#{placeholder.email}" 
+			value="denise@fiap.com.br"
+			th:classappend="${#fields.hasErrors('email')} ? invalid" 
+		/>
+		<span th:errors="*{email}"></span>
 
-			<div class="actions">
-				<a href="/user" class="btn">Cancelar</a>
-				<button class="btn blue">Salvar</button>
-			</div>
-		</form>
-	</div>
+		<input 
+			name="pass" 
+			type="password" 
+			th:placeholder="#{placeholder.pass}"  
+			value="8dy66nk_%*"
+			th:classappend="${#fields.hasErrors('pass')} ? invalid"  
+		/>
+		<span th:errors="*{pass}"></span>
+
+		<div class="actions">
+			<a href="/user" class="btn" th:text="#{button.cancel}"></a>
+			<button class="btn blue" th:text="#{button.save}"></button>
+		</div>
+
+	</form>
+	
+</div>
+
 </body>
 </html>

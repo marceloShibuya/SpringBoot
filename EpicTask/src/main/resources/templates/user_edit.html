@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:include="_template :: head"></head>
+
+<head th:include="_template :: head" ></head>
 
 <body>
-	<div class="content">
-	
-		<h2>Editar Usuario</h2>
-		
-		<form action="/user/update" method="post" th:object="${user}">
-			
-			<input type="hidden" th:field="*{id}" >
-			
-			<input 
-				name="nome" 
-				type="text" 
-				placeholder="Nome completo" 
-				th:field="*{nome}"
-				th:classappend="${#fields.hasErrors('nome')} ? invalid"
-			/> 
-			<span th:errors="*{nome}"></span> <!-- Utilizado para validação de entrada do campo nome -->
-			
-			<input 
-				name="email" 
-				type="text" 
-				placeholder="E-mail" 
-				th:field="*{email}"
-				th:classappend="${#fields.hasErrors('email')} ? invalid"
-			/> 
-			<span th:errors="*{email}"></span>
+<div class="content">
 
-			<div class="actions">
-				<a href="/user" class="btn">Cancelar</a>
-				<button class="btn blue">Salvar</button>
-			</div>
-		</form>
-	</div>
+	<h2 th:text="#{edit.user}"></h2>
+
+	<form action="/user/update" method="POST" th:object="${user}">
+		<input type="hidden" th:field="*{id}" >
+		<input 
+			type="text" 
+			th:placeholder="#{placeholder.name}" 
+			th:field="*{name}"
+			th:classappend="${#fields.hasErrors('name')} ? invalid" 
+		/>
+		<span th:errors="*{name}"></span>
+		
+		<input 
+			type="text" 
+			th:placeholder="#{placeholder.gitName}" 
+			th:field="*{gitName}"
+			th:classappend="${#fields.hasErrors('gitName')} ? invalid" 
+		/>
+		<span th:errors="*{gitName}"></span>
+		
+		<input 
+			type="text" 
+			th:placeholder="#{placeholder.email}" 
+			th:field="*{email}"
+			th:classappend="${#fields.hasErrors('email')} ? invalid" 
+		/>
+		<span th:errors="*{email}"></span>
+
+		<div class="actions">
+			<a href="/user" class="btn" th:text="#{button.cancel}"></a>
+			<button class="btn blue" th:text="#{button.save}"></button>
+		</div>
+
+	</form>
+	
+</div>
+
 </body>
 </html>

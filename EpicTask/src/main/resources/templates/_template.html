@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" th:href="@{~/global.css}">
-<title>Epic Task</title>
+	<meta charset="UTF-8">
+	<title>Epic Task</title>
+	<link rel="stylesheet" type="text/css" th:href="@{~/global.css}">
 </head>
-
 <body>
-	<nav th:fragment="menu(page)" >
-		<ul>
-			<li>
-				<a th:text="#{menu.tasks}" href="/task" th:classappend="${page=='task'} ? active"></a>
-			</li>
-			<li>
-				<a th:text="#{menu.done}" href="#" th:classappend="${page=='done'} ? active"></a>
-			</li>
-			<li>
-				<a th:text="#{menu.team}" href="/user" th:classappend="${page=='team'} ? active"> </a>
-			</li>
-		</ul>
-	</nav>
+
+<nav th:fragment="menu(page)">
+	<ul>
+		<li><a 	th:text="#{menu.tasks}" href="/task" th:classappend="${page=='task'} ? active"></a></li>
+		
+		<li><a th:text="#{menu.done}" href="#" th:classappend="${page=='done'} ? active"></a></li>
+		
+		<li><a th:text="#{menu.team}" href="/user" th:classappend="${page=='team'} ? active"></a></li>
+	</ul>
+</nav>
+
 </body>
 </html>

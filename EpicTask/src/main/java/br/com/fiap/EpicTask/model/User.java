@@ -1,4 +1,4 @@
- package br.com.fiap.EpicTask.model;
+package br.com.fiap.EpicTask.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,23 +8,25 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-@Entity(name = "users")
-//@Data - Lombok - cria todos os Getter´s and Setter´s
+@Entity (name = "users" )
+//@Data [Lombok] - cria todos os Getters and Setters
 public class User {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "{user.name.empty}")
-	private String nome;
+	@NotBlank (message = "{user.name.empty}")
+	private String name;
 	
-	@NotBlank(message = "O email é obrigatório")
-	@Email(message = "Deve ser um e-mail válido")
+	@NotBlank (message = "{user.email.empty}")
+	@Email (message = "{user.email.valid}")
 	private String email;
-	  
-	@Size(min = 8, message = "A senha deve ter pelo menos 8 caracteres")
+	
+	@Size(min = 8, message = "{user.pass.size}")
 	private String pass;
+	
+	@NotBlank(message = "{user.gitName.empty}")
+	private String gitName;
 	
 	public Long getId() {
 		return id;
@@ -32,11 +34,11 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getEmail() {
 		return email;
@@ -51,10 +53,16 @@ public class User {
 		this.pass = pass;
 	}
 	
+	public String getGitName() {
+		return gitName;
+	}
+	public void setGitName(String gitName) {
+		this.gitName = gitName;
+	}
 	@Override
 	public String toString() {
-		return "Nome = " + this.nome + "(" + this.email + ")";
+		return "Nome = " + this.name +
+				" (" + this.email + ")";
 	}
-
-
+	
 }
