@@ -28,9 +28,15 @@ public class UserController {
 	@GetMapping()  
 	public ModelAndView users() {
 		List<User> users = repository.findAll();
-		ModelAndView modelAndView = new ModelAndView("users");
-		modelAndView.addObject("users", users);
+		ModelAndView modelAndView = new ModelAndView("users"); // o users refere-se ao View users.html
+		// Abaixo o "users" é objeto que vai ser enviado para a View, e o segundo parâmetro users refere-se a lista
+		modelAndView.addObject("users", users); 
 		return modelAndView;
+	}
+	
+	@RequestMapping("/new")  
+	public String formUser(User user) {
+		return "user_new";
 	}
 	
 	@PostMapping()  
@@ -39,12 +45,7 @@ public class UserController {
 		repository.save(user);
 		attribute.addFlashAttribute("message", "usuário cadastrado com sucesso");
 		return "redirect:user";
-	}
-	
-	@RequestMapping("/new")  
-	public String formUser(User user) {
-		return "user_new";
-	}
+	}	
 	
 	@RequestMapping("delete/{id}")
 	public String deleteUser(@PathVariable Long id, RedirectAttributes attributes) {

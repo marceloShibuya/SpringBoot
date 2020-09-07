@@ -17,8 +17,8 @@
 	
 	<div class="user" th:each="user : ${users}">
 	
-		<img alt="" th:src="@{https://avatars.githubusercontent.com/ + user.gitName}" class="avatar">
-		
+		<img alt="" th:src="@{https://avatars.githubusercontent.com/} + ${user.gitName}" class="avatar">
+				 
 		<div class="user-info">
 			<h4 th:text="${user.name}"></h4>
 			<p th:text="${user.email}"></p>
