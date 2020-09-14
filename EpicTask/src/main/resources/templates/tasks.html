@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head th:include="_template :: head" ></head>
 
 <body>
 	<h1 th:text="#{task}"></h1>
 	
-	<nav th:include="_template :: menu('task')" ></nav>
+	<a href="/task/new" class="btn-sm btn-primary">
+	<span class="material-icons">add</span>
+	</a>
+
+<div class="content">
+	
+	<span class="alert" th:if="${message != null}" th:text="${message}"></span> <!-- criar as validações do task -->
+	
+	<div class="tasks" th:each="task : ${tasks}">
+		
+		<div class="card-task">
+		
+			<img alt="" src="foto.jpg" class="avatar">
+			
+			<h2 th:text="${task.title}"></h2>
+			
+			<div class="point">
+				<span class="material-icons">star</span> <span th:text="${task.point}"></span> <!-- verificar se é th:number ou th:text para int -->
+			</div>
+
+			<div class="status">
+				<svg>
+						<circle cx="70" cy="70" r="70"></circle>
+						<circle cx="70" cy="70" r="70" style="stroke-dashoffset: calc(440 - (440 * 90 )/100 )"></circle>
+				</svg>
+				<div class="number">
+					<h2 th:text="${task.status}"></h2> <!-- verificar se é th:number ou th:text para int -->
+				</div>
+			</div>
+
+			<button class="btn-hand">
+				<span class="material-icons">pan_tool</span>
+			</button>
+			<a class="btn btn-sm yellow" th:href="${'/task/' + task.id}"> <span class="material-icons">edit</span>
+			</a>
+		</div>
+	</div>
+	</div>
 </body>
 </html>

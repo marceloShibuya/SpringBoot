@@ -9,6 +9,7 @@
 	<h2 th:text="#{edit.user}"></h2>
 
 	<form action="/user/update" method="POST" th:object="${user}">
+	
 		<input type="hidden" th:field="*{id}" >
 		<input 
 			type="text" 
