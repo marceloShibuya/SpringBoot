@@ -12,16 +12,14 @@ public class Task {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@NotBlank (message = "obrigatório o título")
+	@NotBlank(message = "{task.title.empty}")
 	private String title;
 	
-	@NotBlank(message = "obrigatório a descrição")
 	private String description;
-	
+
 	private int point;
 	
 	private int status;
-	
 	
 	public int getId() {
 		return id;

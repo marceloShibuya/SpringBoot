@@ -7,7 +7,7 @@
 	
 <div class="content">
 
-	<h2 th:text="#{new.task}"></h2> <!-- Fazer a internacionalização -->
+	<h2 th:text="#{new.task}"></h2>
 
 	<form action="/task" method="POST" th:object="${task}">
 		<input 
@@ -29,7 +29,7 @@
 		<span th:errors="*{description}"></span>
 
 		<label th:placeholder="#{placeholder.point}" ></label>
-		<input type="number" min="1" max="100" id="point" />
+		<input name="point" type="number" min="1" max="100" id="point" />
 		<input type="range" min="1" max="100" id="range-point" />
 
 		<div class="actions">
