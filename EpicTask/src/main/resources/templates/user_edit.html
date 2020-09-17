@@ -21,11 +21,11 @@
 		
 		<input 
 			type="text" 
-			th:placeholder="#{placeholder.gitName}" 
-			th:field="*{gitName}"
-			th:classappend="${#fields.hasErrors('gitName')} ? invalid" 
+			th:placeholder="#{placeholder.gitHubUser}" 
+			th:field="*{gitHubUser}"
+			th:classappend="${#fields.hasErrors('gitHubUser')} ? invalid" 
 		/>
-		<span th:errors="*{gitName}"></span>
+		<span th:errors="*{gitHubUser}"></span>
 		
 		<input 
 			type="text" 

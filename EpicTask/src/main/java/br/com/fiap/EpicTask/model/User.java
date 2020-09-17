@@ -26,7 +26,11 @@ public class User {
 	private String pass;
 	
 	@NotBlank(message = "{user.gitName.empty}")
-	private String gitName;
+	private String gitHubUser;
+	
+	public String getAvatar() {
+		return "https://avatars.githubusercontent.com/" + gitHubUser;
+	}
 	
 	public Long getId() {
 		return id;
@@ -52,13 +56,14 @@ public class User {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	
-	public String getGitName() {
-		return gitName;
+	public String getGitHubUser() {
+		return gitHubUser;
 	}
-	public void setGitName(String gitName) {
-		this.gitName = gitName;
+
+	public void setGitHubUser(String gitHubUser) {
+		this.gitHubUser = gitHubUser;
 	}
+
 	@Override
 	public String toString() {
 		return "Nome = " + this.name +

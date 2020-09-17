@@ -14,9 +14,9 @@
 
 		<span class="alert" th:if="${message != null}" th:text="${message}"></span>
 
-		<div class="tasks" th:each="task : ${tasks}">
+		<div class="tasks">
 
-			<div class="card-task">
+			<div class="card-task" th:each="task : ${tasks}" >
 
 				<img alt="" th:src="@{https://avatars.githubusercontent.com/marceloShibuya}" class="avatar">
 
@@ -30,7 +30,7 @@
 					<svg>
 						<circle cx="70" cy="70" r="70"></circle>
 						<circle cx="70" cy="70" r="70"
-							style="stroke-dashoffset: calc(440 - (440 * 20)/100 )"></circle>
+							th:style="${'stroke-dashoffset:' +(440 - (440 * task.status)/100)}"></circle>
 					</svg>
 					<div class="number">
 						<h2 th:text="${task.status}"></h2>

@@ -19,13 +19,13 @@
 		<span th:errors="*{name}"></span>
 		
 		<input 
-			name="gitName" 
+			name="gitHubUser" 
 			type="text" 
-			th:placeholder="#{placeholder.gitName}" 
+			th:placeholder="#{placeholder.gitHubUser}" 
 			value="marceloShibuya" 
-			th:classappend="${#fields.hasErrors('gitName')} ? invalid" 
+			th:classappend="${#fields.hasErrors('gitHubUser')} ? invalid" 
 		/>
-		<span th:errors="*{gitName}"></span>
+		<span th:errors="*{gitHubUser}"></span>
 		
 		<input 
 			name="email" 
