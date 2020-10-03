@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://thymeleaf.org">
 
-<head th:include="_template :: head" ></head>
+<head th:include="_template :: head"></head>
 
 <body>
+
 <div class="content">
-
-	<h2 th:text="#{new.user}"></h2>
-
-	<form action="/user" method="POST" th:object="${user}">
+	<h1 th:text="#{form.title.newuser}"></h1>
+	
+	<form th:action="@{/user}" method="POST" th:object="${user}">
 		<input 
-			name="name" 
-			type="text" 
-			th:placeholder="#{placeholder.name}" 
-			value="Denise Hocsis" 
-			th:classappend="${#fields.hasErrors('name')} ? invalid" 
+			type="text"
+			th:placeholder="#{form.label.name}"
+			th:field="*{name}"
+			th:classappend="${#fields.hasErrors('name')} ? invalid"
 		/>
 		<span th:errors="*{name}"></span>
-		
+
 		<input 
-			name="gitHubUser" 
-			type="text" 
-			th:placeholder="#{placeholder.gitHubUser}" 
-			value="marceloShibuya" 
-			th:classappend="${#fields.hasErrors('gitHubUser')} ? invalid" 
+			type="text"
+			th:placeholder="#{form.label.githubuser}"
+			th:field="*{gitHubUser}"
+			th:classappend="${#fields.hasErrors('gitHubUser')} ? invalid"
 		/>
 		<span th:errors="*{gitHubUser}"></span>
-		
+
 		<input 
-			name="email" 
 			type="text" 
-			th:placeholder="#{placeholder.email}" 
-			value="denise@fiap.com.br"
-			th:classappend="${#fields.hasErrors('email')} ? invalid" 
+			th:placeholder="#{form.label.email}"
+			th:field="*{email}"
+			th:classappend="${#fields.hasErrors('email')} ? invalid"
 		/>
 		<span th:errors="*{email}"></span>
 
 		<input 
-			name="pass" 
 			type="password" 
-			th:placeholder="#{placeholder.pass}"  
-			value="8dy66nk_%*"
-			th:classappend="${#fields.hasErrors('pass')} ? invalid"  
+			th:placeholder="#{form.label.pass}"
+			th:field="*{pass}"
+			th:classappend="${#fields.hasErrors('pass')} ? invalid"
 		/>
 		<span th:errors="*{pass}"></span>
 
 		<div class="actions">
-			<a href="/user" class="btn" th:text="#{button.cancel}"></a>
-			<button class="btn blue" th:text="#{button.save}"></button>
+			<a href="/user" class="btn" th:text="#{form.button.cancel}"></a>
+			<button class="btn blue" th:text="#{form.button.save}"></button>
 		</div>
-
 	</form>
-	
 </div>
+
 
 </body>
 </html>

@@ -4,28 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 @Entity(name = "tasks")
 public class Task {
-	
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@NotBlank(message = "{task.title.empty}")
-	private String title;
-	
-	private String description;
 
-	private int point;
-	
-	private int status;
-	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -61,12 +51,18 @@ public class Task {
 		this.status = status;
 	}
 
-	@Override
-	public String toString() {
-		return "Task [id=" + id + ", title=" + title + ", description=" + description + ", point=" + point + ", status="
-				+ status + "]";
-	}
-
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
-
+	@NotBlank
+	private String title;
+	
+	private String description;
+	
+	@Min(1) @Max(100)
+	private int point;
+	
+	@Min(0) @Max(100)
+	private int status;
+	
 }

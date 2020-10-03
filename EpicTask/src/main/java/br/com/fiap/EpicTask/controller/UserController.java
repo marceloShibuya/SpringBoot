@@ -6,6 +6,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,28 +25,28 @@ public class UserController {
 	
 	@Autowired
 	private UserRepository repository;
-	
+
 	@GetMapping()  
 	public ModelAndView users() {
 		List<User> users = repository.findAll();
-		ModelAndView modelAndView = new ModelAndView("users"); // o users refere-se ao View users.html
-		// Abaixo o "users" é objeto que vai ser enviado para a View, e o segundo parâmetro users refere-se a lista
-		modelAndView.addObject("users", users); 
+		ModelAndView modelAndView = new ModelAndView("users");
+		modelAndView.addObject("users", users);
 		return modelAndView;
+	}
+	
+	@PostMapping()  
+	public String save(@Valid User user, BindingResult result, RedirectAttributes attribute) {
+		if (result.hasErrors()) return "user_new";
+		user.setPass(new BCryptPasswordEncoder().encode(user.getPass()));
+		repository.save(user);
+		attribute.addFlashAttribute("message", "usuário cadastrado com sucesso");
+		return "redirect:user";
 	}
 	
 	@RequestMapping("/new")  
 	public String formUser(User user) {
 		return "user_new";
 	}
-	
-	@PostMapping()  
-	public String save(@Valid User user, BindingResult result, RedirectAttributes attribute) {
-		if (result.hasErrors()) return "user_new";
-		repository.save(user);
-		attribute.addFlashAttribute("message", "usuário cadastrado com sucesso");
-		return "redirect:user";
-	}	
 	
 	@RequestMapping("delete/{id}")
 	public String deleteUser(@PathVariable Long id, RedirectAttributes attributes) {
@@ -63,12 +64,20 @@ public class UserController {
 	}
 	
 	@PostMapping("update")
-	public String updateUser(@Valid User user, BindingResult result, RedirectAttributes attributes){
+	public String updateUser(@Valid User user, BindingResult result){
 		if (result.hasErrors()) return "user_edit";
 		repository.save(user);
-		attributes.addFlashAttribute("message", "usuário atualizado!");
 		return "redirect:/user";
 	}
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
