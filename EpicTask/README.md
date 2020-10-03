@@ -1,4 +1,4 @@
-# Epick Task [TURMA 2TDS F]
+# Epick Task
 
 App de controle de tarefas gamificado para equipes auto gerenciáveis.
 
